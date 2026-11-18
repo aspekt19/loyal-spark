@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.aspekt19/loyal-spark-recipient",
+  "title": "Loyal Spark Holder",
+  "description": "Loyalty holders on Base: balances, rewards, vouchers, P2P offers. x402 pay-per-call or rwk_ key.",
+  "version": "1.0.0",
+  "websiteUrl": "https://loyalspark.online/for-agents",
+  "icons": [
+    {
+      "src": "https://loyalspark.online/media-kit/app-icon-1024.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "1024x1024"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.loyalspark.online/recipient-loyalty-mcp",
+      "headers": [
+        {
+          "name": "x-api-key",
+          "description": "Holder key rwk_... for wallet-scoped tools (tools/list works without it). See https://loyalspark.online/for-agents",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

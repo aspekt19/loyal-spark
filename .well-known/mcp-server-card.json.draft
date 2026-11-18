@@ -1,0 +1,26 @@
+{
+  "serverInfo": {
+    "name": "loyal-spark-mcp",
+    "title": "Loyal Spark",
+    "version": "1.0.5"
+  },
+  "description": "Onchain loyalty on Base: programs, minting, rewards, vouchers, P2P market.",
+  "iconUrl": "https://loyalspark.online/media-kit/app-icon-1024.png",
+  "documentationUrl": "https://loyalspark.online/for-agents",
+  "transport": {
+    "type": "streamable-http",
+    "url": "https://api.loyalspark.online/loyalty-mcp"
+  },
+  "authentication": {
+    "required": false,
+    "schemes": [
+      "apiKey"
+    ],
+    "header": "x-api-key"
+  },
+  "capabilities": {
+    "tools": {
+      "listChanged": true
+    }
+  }
+}

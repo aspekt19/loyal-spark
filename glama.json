@@ -1,0 +1,10 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": [
+    "aspekt19"
+  ],
+  "name": "Loyal Spark",
+  "description": "Remote MCP servers for the Loyal Spark onchain loyalty protocol on Base.",
+  "homepage": "https://loyalspark.online/for-agents",
+  "documentation": "https://loyalspark.online/llms-full.txt"
+}

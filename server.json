@@ -1,0 +1,38 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.aspekt19/loyal-spark",
+  "title": "Loyal Spark",
+  "description": "43 MCP tools for onchain loyalty on Base: programs, minting, rewards, vouchers. x402 or lsk_ key.",
+  "version": "1.0.5",
+  "websiteUrl": "https://loyalspark.online/for-agents",
+  "icons": [
+    {
+      "src": "https://loyalspark.online/media-kit/app-icon-1024.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "1024x1024"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.loyalspark.online/loyalty-mcp",
+      "headers": [
+        {
+          "name": "x-api-key",
+          "description": "Merchant key lsk_... (tools/list and get_platform_info work without it). Get one for $0.01 USDC via x402: POST https://api.loyalspark.online/x402-gateway/register-agent, or via SIWE if the wallet has a plan.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "Authorization",
+          "description": "Alternative auth: Bearer lsk_... (same key as x-api-key).",
+          "isRequired": false,
+          "isSecret": true,
+          "placeholder": "Bearer lsk_..."
+        }
+      ]
+    }
+  ]
+}
