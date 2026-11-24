@@ -1,5 +1,7 @@
 # Loyal Spark: MCP servers and agent skill
 
+[![Loyal Spark MCP connector](https://glama.ai/mcp/connectors/io.github.aspekt19/loyal-spark/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.aspekt19/loyal-spark)
+
 Onchain loyalty for AI agents on Base (chain 8453): create B20 loyalty programs, mint points to customer wallets, manage rewards, vouchers and gift certificates, trade loyalty tokens on a P2P market. Hosted service: nothing to install.
 
 | Server | URL | Tools |
